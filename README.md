@@ -1,0 +1,2 @@
+# palikkaTiedosto
+tech problem
