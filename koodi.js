@@ -15,13 +15,14 @@ const isTwoCoordinatesTheSame = (coor1, coor2) => {
 
 // coordinate is in the array?
 const coordinateExistsInArray = (coordinate, availableCoordinates) => {
-	for (var i = 0; i < availableCoordinates.length; i++) {
+  for (let i = 0; i < availableCoordinates.length; i++) {
 		if (isTwoCoordinatesTheSame(coordinate, availableCoordinates[i])) {
 			return true;
 		}
 	}
 	return false;
 };
+
 //console.log(coordinateExistsInArray([0,0], [[0,0], [0,1], [1,1]])); //=> should return true
 //console.log(coordinateExistsInArray([5,0], [[0,0], [0,1], [1,1]])); //=> should return false
 
@@ -67,17 +68,17 @@ const fitToGrid = (tetrisPieces) => {
 		[3, 2],
 		[3, 3]
 	];
-	for (var j = 0; j < grid.length; j++) {
+	for (let j = 0; j < grid.length; j++) {
 
 		const coordinatesA = getAbsoluteCoordinates(tetrisPieces[0], grid[j]);
 		const gridAfterA = removeCoordinates(coordinatesA, grid);
 
-		for (var k = 0; k < gridAfterA.length; k++) {
+		for (let k = 0; k < gridAfterA.length; k++) {
 
 			const coordinatesB = getAbsoluteCoordinates(tetrisPieces[1], gridAfterA[k]);
 			const gridAfterAB = removeCoordinates(coordinatesB, gridAfterA);
 
-			for (var l = 0; l < gridAfterAB.length; l++) {
+			for (let l = 0; l < gridAfterAB.length; l++) {
 
 				const coordinatesC = getAbsoluteCoordinates(tetrisPieces[2], gridAfterAB[l]);
 				const gridAfterABC = removeCoordinates(coordinatesC, gridAfterAB);
