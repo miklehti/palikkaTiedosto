@@ -1,0 +1,19 @@
+{
+  "name": "palikka",
+  "version": "1.0.0",
+  "description": "tech problem",
+  "main": "koodi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miklehti/palikkaTiedosto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miklehti/palikkaTiedosto/issues"
+  },
+  "homepage": "https://github.com/miklehti/palikkaTiedosto#readme"
+}
