@@ -46,6 +46,7 @@ const fitToGrid = (ids, tetrisPieces) => {
 			}
 		}
 	}
+	console.log('No solution, please check the input');
 }
 
 //1. starting point, read palikkatiedosto.txt and create one array for id's and one for coordinates
@@ -53,7 +54,10 @@ let lines = fs.readFileSync('palikkatiedosto.txt').toString().split("\n");
 let ids = [];
 let tetrisPieces = [];
 for (i in lines) {
-	ids.push(utils.parseId(lines[i]));
-	tetrisPieces.push(utils.parseTetrisPiece(lines[i]));
+	if(lines[i].length > 5){
+		ids.push(utils.parseId(lines[i]));
+		tetrisPieces.push(utils.parseTetrisPiece(lines[i]));
+	}
 }
+
 fitToGrid(ids, tetrisPieces);
