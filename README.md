@@ -1,7 +1,7 @@
 # palikkaTiedosto
 tech problem
 
-Kloonaa koodi koneellesi ja juurihakemistossa aja:
+Kloonaa koodi koneellesi ja juurihakemistossa aja (itselläni node versio v6.12.2):
 
 node koodi.js
 
