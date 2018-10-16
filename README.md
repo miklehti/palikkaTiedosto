@@ -1,6 +1,15 @@
 # palikkaTiedosto
 tech problem
 
+Kloonaa koodi koneellesi ja juurihakemistossa aja:
+
+node koodi.js
+
+Testaus: aja juurihakemistossa
+
+npm test
+
+
 
 "The objective is to fit 4 tetris pieces into 4x4 grid. The pieces you can find from the file attached (palikkatiedosto.txt). The pieces should be first fitted into your application, where the application fits the pieces into the grid and gives an answer about the spots of the pieces. Pieces can’t be turned, they has to be fit into the grid in given posture. 
 
